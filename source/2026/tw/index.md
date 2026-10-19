@@ -2,6 +2,13 @@
 
 ## PyCon Taiwan 2026とは
 
+```{figure} images/pycontaiwan2026.png
+:width: 400
+
+PyCon Taiwan 2026公式サイト
+```
+
+
 ## Day 1
 
 ### Opening
