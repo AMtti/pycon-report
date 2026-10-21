@@ -81,6 +81,12 @@ Conference ChairのRex氏によるオープニング
 最初のキーノートはTian Gao氏によるものです。
 スライドは英語ですが発表は中国語です。
 
+```{figure} images/tian.jpg
+:width: 400
+
+Tian Gao氏
+```
+
 * pdbのバグを直した。llを実行するとローカルでの変更がかきかわる。f_locals
 * 中国語でのトーク
 * Brandt Bucherが連絡してくれたらしい
@@ -107,6 +113,13 @@ Conference ChairのRex氏によるオープニング
 ### From PyCon APAC to PythonAsia
 
 * Freilla
+
+```{figure} images/freilla.jpg
+:width: 400
+
+Freilla Mae Espinola氏
+```
+
 * PyCon PHの2017でボランティアに
 * taiwanでは3回(2014, 15, 22)PyCon APACを開催。ただ2022はオンライン
 * AsiaにはたくさんのPythonコミュニティがある
@@ -125,6 +138,12 @@ Conference ChairのRex氏によるオープニング
 
 ### Getting Started with Signal Processing in Python: Visualizing Sound with Spectrograms
 
+```{figure} images/wat.jpg
+:width: 400
+
+wat氏
+```
+
 * wat
 * 5ステップでできるようになるよ
 * sounddeviceを使って録音→Numpy aarryになる
@@ -141,6 +160,12 @@ watさんの発表体験のコラム
 ````
 
 ### Learning Python Through KangaCode
+
+```{figure} images/jeff.jpg
+:width: 400
+
+Chieh-Hung (Jeff) Cheng氏
+```
 
 * KangaCodeのFounder
 * https://www.kangacode.ai/tw
@@ -184,15 +209,30 @@ Han Lee氏
 PyNightはピザなどを食べながら参加者同士で交流するイベントです。
 筆者も同じテーブルになった人と自己紹介をして交流しました。
 
+```{figure} images/pynight.jpg
+:width: 300
+
+PyNightのピザ
+```
+
 ただ、今年は会場の都合でアルコールが出せないとのことで、筆者やUKから参加しているCheukさんは「ビールが飲みたい！！」 と強く思いました。
-昨日一緒に飲んでいたYuchenやKenjiに「どこかおすすめのお店ある？」と相談し、教えてもらったBeer Geekというお店に飲みに行きました。
+昨日一緒に飲んでいたYuchenやKenjiに「どこかおすすめのお店ある？」と相談し、教えてもらった[Beer Geek](https://www.instagram.com/beergeektaipei/)というお店に飲みに行きました。
 
-(6人の写真)
+```{figure} images/beergeek.jpg
+:width: 400
 
-その後、臨江街観光夜市をぶらぶらし、Cheukさんがおすすめしてくれたかき氷を食べに行きました。
+Beer Geekにて（wat、Toomas、Petertc、Soojin、Cheuk、筆者）
+```
+
+その後、臨江街観光夜市をぶらぶらし、Cheukさんがおすすめする「御品元冰火湯圓」というかき氷の店に行きました。
+あとで調べたところ、ミシュラン・ビブグルマンにも載ったことがある人気店のようです。
 冷たい氷の上に温かい団子が乗っているという、変わったかき氷ですがおいしかったです。
 
-(かき氷の写真)
+```{figure} images/ice.jpg
+:width: 300
+
+お団子の乗ったかき氷
+```
 
 ## Day 2
 
