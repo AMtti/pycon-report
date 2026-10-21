@@ -1,6 +1,21 @@
 # PyCon Taiwan 2026
 
+鈴木たかのり（[@takanory](https://x.com/takanory)）です。
+2026年10月に台湾の台北で開催された、プログラミング言語Pythonのカンファレンス「PyCon Taiwan 2026」に参加してきたので、その様子をレポートします。
+
+
 ## PyCon Taiwan 2026とは
+
+PyCon Korea 2026のイベント概要は以下の通りです。
+
+|項目|内容|
+|--|--|
+|URL|<https://2026.pycon.tw/>|
+|日程| 2026年10月17日（土）、18日（日）|
+|場所| 台北市 |
+|会場| TODO大学名 |
+|参加費| 個人：60,000 KRW（約7,000円）、Tシャツ 15,000 KRW |
+|主催| TODO確認 |
 
 ```{figure} images/pycontaiwan2026.png
 :width: 400
@@ -8,17 +23,65 @@
 PyCon Taiwan 2026公式サイト
 ```
 
+筆者がPyCon Taiwanには2024、2023、2019年など複数回参加しています。
+初めて参加した海外PyConもPyCon Taiwanでした。過去のレポートは以下を参照してください。
+
+* [PyCon Taiwan 2024レポート](https://gihyo.jp/article/2024/10/pycon-tw-2024)
+* [PyCon Taiwan 2023レポート](https://gihyo.jp/article/2023/09/pycon-tw2023)
+* [PyCon Taiwan 2019レポート](https://gihyo.jp/news/report/01/pycon-tw2019)
+
+## カンファレンス前日
+
+カンファレンス前日に台湾入りをしました。
+この日はスピーカーディナーがありましたが、残念ながら私はスピーカーではないので予定がありません。
+すると台湾メンバーのYuchenがクラフトビールの見学ツアー（飲み放題付き）を企画してくれました。
+私は残念ながらツアーには参加できなかったんですが、飲み放題には参加し[Taiwan Head Brewers](https://headbrewers.com.tw/en/)のさまざまなビールを楽しみました。いやー、楽しかった。
+
+```{figure} images/day0beer.jpg
+:width: 400
+
+左からGTB、Kenji、筆者、Yuchen、Rex
+```
+
+飲み放題は21時までなので、その後カンファレンス会場の近くにある[Flow Brewing](https://www.flowbrewing.beer/)に移動しました。
+場所をアジアメンバーに連絡しておいたところ、スピーカーディナーや今日到着したメンバーがすでに集まっていました。
+いつものPyConがスタートしたな、という感じです。
+
+```{figure} images/day0beer2.jpg
+:width: 400
+
+アジアメンバーを中心に集合
+```
 
 ## Day 1
 
+今年のカンファレンス会場は台北医学大学（Taipei Medical University）の教育棟（Teaching Building）です（[Googleマップ](https://maps.app.goo.gl/kSNBtUQubSAQV1qn7)）。
+台北101から徒歩15分くらいの場所にあります。
+
+```{figure} images/university.jpg
+:width: 400
+
+立派な大学名
+```
+
 ### Opening
 
-* スポンサー、
+カンファレンスのオープニングではConference ChairのRex氏により、イベント内容やスポンサーの紹介がありました。
+私はRex氏が今年のPyCon TaiwanのChairだということを知らなかったので（主催者の一人だとは思っていましたが）、少しびっくりしました。
+Chairなのにスピーカーディナーではなく、ビールツアーの方に来ていたんですね。
 
-### Keynote
+```{figure} images/opening.jpg
+:width: 400
 
-* From CPython to PySpark
-* pdfのバグを直した。llを実行するとローカルでの変更がかきかわる。f_locals
+Conference ChairのRex氏によるオープニング
+```
+
+### Keynote: From CPython to PySpark
+
+最初のキーノートはTian Gao氏によるものです。
+スライドは英語ですが発表は中国語です。
+
+* pdbのバグを直した。llを実行するとローカルでの変更がかきかわる。f_locals
 * 中国語でのトーク
 * Brandt Bucherが連絡してくれたらしい
 * 2023 May 4にPython Triagerになった
@@ -86,9 +149,50 @@ watさんの発表体験のコラム
 * RPGにする
 * 5行以内でとくという問題で、セミコロンを使って3行で実行した(ウケる
 
-### LightningTalk
+### Lightning Talks
 
-### PyNight
+PyCon Taiwanのライトニングトークは当日に申し込みを行い、その中から選ばれたトークが発表対象となります。
+時間は**3分**とさらに短いのが特徴です。
+筆者も申し込み選ばれたので、無事にイベントに爪痕を残すことができました。
+
+筆者の発表は「Talks, Beer & Python: My Overseas PyCon Journey」というタイトルで、自身の海外PyConに参加した経験を共有しました。
+そして、得られるものがあるのでみんなも海外PyConに参加しましょう！！という内容です。
+トークの最初で「海外PyConに参加したことある人？」と質問すると30%くらいの人が手を上げており、思ったよりも多くてびっくりしました。
+
+このトークを聞いて海外PyConに参加した人と、いつかどこかで会えるといいなと思います。
+
+* [Talks, Beer & Python: My Overseas PyCon Journeyのスライド](https://slides.takanory.net/slides/20261017pycontw-lt)
+
+```{figure} images/lt-takanory.jpg
+:width: 400
+
+筆者のライトニングトーク
+```
+
+他のライトニングトークでは、韓国から参加しているHan Lee氏が自身のPythonコミュニティによって成長した体験を共有してくれました。
+似たような内容をPyCon JPでも発表してくれていて、台湾はその短縮版のような感じでした。
+
+```{figure} images/lt-han.jpg
+:width: 400
+
+Han Lee氏
+```
+
+### PyNight→ビール→夜市→ビール
+
+カンファンス1日目が終わった後はPyNightというイベントが開催されました。
+PyNightはピザなどを食べながら参加者同士で交流するイベントです。
+筆者も同じテーブルになった人と自己紹介をして交流しました。
+
+ただ、今年は会場の都合でアルコールが出せないとのことで、筆者やUKから参加しているCheukさんは「ビールが飲みたい！！」 と強く思いました。
+昨日一緒に飲んでいたYuchenやKenjiに「どこかおすすめのお店ある？」と相談し、教えてもらったBeer Geekというお店に飲みに行きました。
+
+(6人の写真)
+
+その後、臨江街観光夜市をぶらぶらし、Cheukさんがおすすめしてくれたかき氷を食べに行きました。
+冷たい氷の上に温かい団子が乗っているという、変わったかき氷ですがおいしかったです。
+
+(かき氷の写真)
 
 ## Day 2
 
@@ -178,7 +282,20 @@ Kir Chou
 
 ### Closing
 
-* 
+Closingでは抽選会が行われました。
+1日目にライトニングトークをしたHan Lee氏が当選してたんですが、もらったソフトウェアは台湾でしか動かないものだそうです（このあとのPartyで本人から聞きました）。
+
+(Han Leeの写真
+
+参加者数は296名、72名の海外からの参加者（多い！）、48%が初参加とのことです。
+国別の参加者数では、韓国からが19名でダントツでした。
+日本からは11名が参加したとのことです。私が出会えていない日本からの参加者が他にもいそうです。
+
+(国別参加者数
+
+クロージングでPyNightを紹介する写真で
+
+(PyNightを紹介する写真
 
 ### Party
 
