@@ -78,6 +78,9 @@ Conference ChairのRex氏によるオープニング
 
 ### Keynote: From CPython to PySpark
 
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/keynote/37>
+* スピーカー：Tian Gao
+
 最初のキーノートはTian Gao氏によるものです。
 スライドは英語ですが発表は中国語です。
 
@@ -87,32 +90,67 @@ Conference ChairのRex氏によるオープニング
 Tian Gao氏
 ```
 
-* pdbのバグを直した。llを実行するとローカルでの変更がかきかわる。f_locals
-* 中国語でのトーク
-* Brandt Bucherが連絡してくれたらしい
-* 2023 May 4にPython Triagerになった
-* Core devへの道。Brandtのおすすめの5ステップ
-* さまざまなコードを実装
-* PEP 667を書いた
-* PyCon US 2024で発表してLanguage Summitに参加した
-* 2024 June 6にCore devになった
-  * pdbのデファクトメンテナー
-  * これが終わりではない
-* 3.14でpdbでのシンタックスハイライト、3.15でPyREPLの複数行修正
+トークの前半はTain氏がCPythonのコア開発者になるまでの話です。
+[pdb](https://docs.python.org/ja/3/library/pdb.html)を使用しているときに、`ll`コマンドを実行するとローカルの変数の値が書きかわるというバグに遭遇しました。
+これは`f_locals`という辞書の中身が上書きされるためであり、CPythonに対しての初めてのプルリクエストとして、この問題に対処する修正を2023年2月に作成したとのことです。
+翌月にマージされ、オープンソースへの貢献のきっかけとなったそうです。
 
-#### Part 2: databricksに入った
+その後も継続的にPRを出していると、コア開発者のBrandt Bucher氏が連絡をくれて、レビューやマージを手伝ってくれるようになったそうです（Brandt Bucker氏は構造的パターンマッチの作者として有名です）。
 
-* PySpark teamに入ったがSparkのことはなにも知らない
-* Black Flake8をruffに変更
-* 型ヒントを入れた
-* dependencyがあちこちに書いてあったものをpyproject.tomlに統一
-* sparkのUDFの仕組みを書き換えた
-* 2026 May 28にSparkのコミッターに
-  * 7カ月で219のコミット
+* [Python 3.10の新機能：構造化パターンマッチング | gihyo.jp](https://gihyo.jp/article/2022/07/monthly-python-2207)
+* [Pythonの構造的パターンマッチングのさらに便利なパターン紹介 | gihyo.jp](https://gihyo.jp/article/2024/01/monthly-python-2401)
+
+そしてBrandt氏からの推薦で2026年5月からCPythonのトリアージャー（Issueの分類、管理担当）となったそうです。
+
+その後Tian氏は「コア開発者になりたい」という目標をBrandt氏に伝え、Brandt氏からは以下の5つのステップがおすすめされました。
+
+1. 貢献を続ける
+2. Issueへの返事や、他の人のコードをレビューする
+3. 特定のコンポーネントのメンテナンスを主導する
+4. PEPや大きめの機能に取り組む
+5. 対面で交流する
+
+```{figure} images/5steps.jpg
+:width: 400
+
+コア開発者になるための5つのステップ
+```
+
+その後、多数のバグ修正とPRレビュー、PEP 667[^pep667]の執筆と実装、PyCon USやLanguage Summitでの発表[^pyconus-talk]や交流を行い、2024年6月にCPythonのコア開発者となったそうです。
+そのときの推薦者もBrandt氏[^promote-tian]でした。
+
+[^pep667]: [PEP 667 – Consistent views of namespaces | peps.python.org](https://peps.python.org/pep-0667/)
+[^promote-tian]: [Vote to promote Tian Gao - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-tian-gao/53895)
+[^pyconus-talk]: [The chaotic locals() and how we fixed it - Tian Gao - YouTube](https://www.youtube.com/watch?v=dGNt88HMUpg)
+
+Tian氏はその後も主にpdbに関する貢献を続けており、Python 3.14でのpdb内でのシンタックスハイライト[^tian-314]、3.15でpdb内のPyREPLでの複数行の修正対応[^tian-315]、デバッグ時のオーバーヘッドを削減する最適化などを行ってきたそうです。
+
+[^tian-315]: [What’s new in Python 3.15 — Python 3.15.1 documentation](https://docs.python.org/3/whatsnew/3.15.html#pdb)
+[^tian-314]: [What’s new in Python 3.14 — Python 3.15.1 documentation](https://docs.python.org/3/whatsnew/3.14.html#pdb)
+
+トークの後半はDatabricksへの入社とPySparkへの貢献です。
+CPythonのコア開発者としての実績が評価され、Tian氏はDatabricksにPythonの専門家として採用され、PySparkの担当となりました。
+しかし当初はSparkのことは全く知りません。
+まずはBlackとFlake8をruffに変更したり、mypyによる型チェックの基盤の再構築、さまざまな箇所に記述してある依存情報をpyproject.tomlに統一など、コードの整理から行ったそうです。
+また、CIの設定ファイルを整理したり、不安定なテストを修正、CI全体の実行時間の短縮なども行ったそうです。
+
+その後PySparkがSparkとやりとりするUDF通信プロトコルを再設計し、拡張性の高いものとなったそうです。
+
+このようにさまざまな貢献を行い、参画から7カ月たった2026年5月28日にPySparkのコミッターとなったそうです。7カ月間に219件のコミットを行ったそうです。
+
+このように特定の分野に対して継続的に貢献することによって、CPythonとPySparkでのコア開発者となるという道が紹介されました。
+
+Tian Gao氏とは今回初めて会うことができました。
+継続的に着実に貢献を行っていて、頭が下がるなと思いました。
 
 ### From PyCon APAC to PythonAsia
 
-* Freilla
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/373>
+* スピーカー：Freilla Mae Espinola
+
+このトークではPython Asia Organization（PAO）[^pao]のExecutive DirectorであるFreilla氏から、PyCon APACからPythonAsiaに変わっていったのか、について背景や課題、現状について共有されました。
+
+[^pao]: [Python Asia - Strengthening Python Communities Across Asia](https://pythonasia.org/)
 
 ```{figure} images/freilla.jpg
 :width: 400
@@ -120,21 +158,27 @@ Tian Gao氏
 Freilla Mae Espinola氏
 ```
 
-* PyCon PHの2017でボランティアに
-* taiwanでは3回(2014, 15, 22)PyCon APACを開催。ただ2022はオンライン
-* AsiaにはたくさんのPythonコミュニティがある
-* PyCon APACの開催は各ローカルコミュニティに依存していた。ゼロから作る
-* 15回 PyCon APACが開催されてきた
-* PAOを2024年に立ち上げ、PythonAsiaを開催することにした
-* EuroPython Scietyと同じイメージ。地域カンファレンスのsteward
-* localコミュニティがリードしPAOがサポートする
-* playbooksを書いているらしい→どこで見れるんだろ
-* 前のchairが次のchairのメンターになる(なるほどー
-* 3つのプログラム: Python Across Asia, Online Charity Talks, PAO Post
-* 4つのやることあるよ
-* Playbooksはどこにあるの?→ブースにQRコードあるよ
-* biggest challenge→language、
-* どのイベントが一番エキサイトする?→2027のシンガポール
+アジア全体でのPythonカンファレンスとしては以前は「PyCon APAC」があり、2010年のシンガポールからはじまり、日本、台湾、韓国、マレーシア、タイ、インドネシアと各国持ち回りで開催され、2025年のフィリピンで終了となりました。
+
+アジア各国にはたくさんのPythonコミュニティがあり、PyCon APACは各ローカルのコミュニティに依存し、それぞれゼロからイベントを構築していました。
+そのため、ノウハウが蓄積できないという問題がありました。
+
+この課題を解決するために2024年にPAOを立ち上げ、2026年から新しいカンファレンス（PythonAsia）を開催することとしました。
+EuroPythonを主催しているEuroPython Sciety[^eps]が存在しており、この団体と同じイメージとのことです。
+PythonAsiaの開催はローカルのコミュニティがリードし、PAOがサポートするという体制で運営するとのことです。
+
+[^eps]: <https://www.europython-society.org/>
+
+具体的な取り組みとして、イベント運営のノウハウをまとめた**プレイブック**を作成中とのことです。
+他には前年のChairが次の年のChairのメンターとなり、経験を継承するそうです。
+また、PythonAsia以外に以下の3つの交流プログラムを行っていくとのことです。
+
+* Python Across Asia：Youtubeでの対談（[Python Across Asia | Episode 01 - YouTube](https://www.youtube.com/watch?v=f8omlQ8ZSis)）
+* Online Charity Talks：オンラインのチャリティトークイベント（[PAO Online Charity Talks H2 2025 - YouTube](https://www.youtube.com/watch?v=OXUJhvl2m7A)）
+* PAO Post：カンファレンスの記念絵はがきを送る
+
+質問で「どのイベントが一番エキサイトしますか？」という質問には「2027年のシンガポールでのPythonAsia」との回答がありました。
+筆者も参加したいなと思っています。来年が楽しみです。
 
 ### Getting Started with Signal Processing in Python: Visualizing Sound with Spectrograms
 
