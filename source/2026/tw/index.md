@@ -182,6 +182,9 @@ PythonAsiaの開催はローカルのコミュニティがリードし、PAOが�
 
 ### Getting Started with Signal Processing in Python: Visualizing Sound with Spectrograms
 
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/374>
+* スピーカー：wat
+
 ```{figure} images/wat.jpg
 :width: 400
 
@@ -205,30 +208,39 @@ watさんの発表体験のコラム
 
 ### Learning Python Through KangaCode
 
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/377>
+* スピーカー：Chieh-Hung (Jeff) Cheng
+
 ```{figure} images/jeff.jpg
 :width: 400
 
 Chieh-Hung (Jeff) Cheng氏
 ```
 
-* KangaCodeのFounder
-* https://www.kangacode.ai/tw
-* 似たプロジェクト: Scratch
-* 9さいのこどもは2分でエディターを閉じる
-* RPGにする
-* 5行以内でとくという問題で、セミコロンを使って3行で実行した(ウケる
+KangaCode（[www.kangacode.ai](https://www.kangacode.ai/)）という子どもがPythonを学ぶプラットフォームの紹介です。
+スピーカーはこのプロダクトの共同創業者です。
+
+似たプロダクトにScratchがありますが、Scratchはプログラミング言語ではありません。
+従来のPythonの学習は抽象度が高く、挫折しやすい課題があります。
+9歳の子どもはエディターの画面を2分で閉じます。
+
+そんな子どもでも楽しくプログラミングを学べるようにするために、RPGを題材にし、キャラクターの移動や探索などをPythonのコードで行います。
+
+面白い例として「5行以内で解く」という例で、教えられていないセミコロン（`;`）を使用し、複数行のPythonコードを1行にまとめて解いた子どもがいたそうです（すごい）。
+
+英語と台湾語のみですが興味のある方はぜひ試してみてください。
 
 ### Lightning Talks
 
 PyCon Taiwanのライトニングトークは当日に申し込みを行い、その中から選ばれたトークが発表対象となります。
-時間は**3分**とさらに短いのが特徴です。
-筆者も申し込み選ばれたので、無事にイベントに爪痕を残すことができました。
+発表時間は**3分**ととても短いのが特徴です。
+筆者も申し込んだところ選ばれたので、無事にイベントに爪痕を残すことができました。
 
-筆者の発表は「Talks, Beer & Python: My Overseas PyCon Journey」というタイトルで、自身の海外PyConに参加した経験を共有しました。
+タイトルは「Talks, Beer & Python: My Overseas PyCon Journey」で、自身の海外PyConに参加した経験を共有しました。
 そして、得られるものがあるのでみんなも海外PyConに参加しましょう！！という内容です。
 トークの最初で「海外PyConに参加したことある人？」と質問すると30%くらいの人が手を上げており、思ったよりも多くてびっくりしました。
 
-このトークを聞いて海外PyConに参加した人と、いつかどこかで会えるといいなと思います。
+このトークを聞いて、初めての海外PyConに参加した人と、いつかどこかで会えるといいなと思います。
 
 * [Talks, Beer & Python: My Overseas PyCon Journeyのスライド](https://slides.takanory.net/slides/20261017pycontw-lt)
 
@@ -238,7 +250,7 @@ PyCon Taiwanのライトニングトークは当日に申し込みを行い、�
 筆者のライトニングトーク
 ```
 
-他のライトニングトークでは、韓国から参加しているHan Lee氏が自身のPythonコミュニティによって成長した体験を共有してくれました。
+他のライトニングトークでは、韓国から参加しているHan Lee氏が、Pythonコミュニティによって自分が成長した体験を共有してくれました。
 似たような内容をPyCon JPでも発表してくれていて、台湾はその短縮版のような感じでした。
 
 ```{figure} images/lt-han.jpg
@@ -254,7 +266,7 @@ PyNightはピザなどを食べながら参加者同士で交流するイベン�
 筆者も同じテーブルになった人と自己紹介をして交流しました。
 
 ```{figure} images/pynight.jpg
-:width: 300
+:width: 250
 
 PyNightのピザ
 ```
@@ -273,16 +285,27 @@ Beer Geekにて（wat、Toomas、Petertc、Soojin、Cheuk、筆者）
 冷たい氷の上に温かい団子が乗っているという、変わったかき氷ですがおいしかったです。
 
 ```{figure} images/ice.jpg
-:width: 300
+:width: 250
 
 お団子の乗ったかき氷
 ```
 
+その後昨日と同じ店（Flow Brewing）で一杯飲んでPyCon Taiwanの1日目が終わりました。
+
 ## Day 2
 
-### Keynote
+### Keynote: From Data Collection to Skill Training: Next-Generation Sports Technology Combining AI and VR
 
-* 精華大学のPh.D
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/keynote/38>
+* スピーカー：Anita Hu
+
+```{figure} images/anita.jpg
+:width: 400
+
+Anita Hu氏
+```
+
+台湾の精華大学のPh.D
 * AIでスポーツのビデオを解析
   * イベントを取り出す
   * スイングが5種類、コーチは30種類という→研究者が見分けられないのでラベルを付けられない
@@ -326,6 +349,15 @@ Beer Geekにて（wat、Toomas、Petertc、Soojin、Cheuk、筆者）
   
 ### Learn Japanese with Manga! Building a Multimodal Search Engine with Gemini Embedding 2
 
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/378>
+* スピーカー：@x0mg
+
+```{figure} images/x0mg.jpg
+:width: 400
+
+@x0mg氏
+```
+
 * 1つのマンガとアニメのシーンを検索し、日本語を読んで聞くということをやりたい
 * マルチモーダルで近いベクトルのものを選ばれる
 * Gemini Embedding 2を使用
@@ -338,12 +370,24 @@ Beer Geekにて（wat、Toomas、Petertc、Soojin、Cheuk、筆者）
 
 ### Avoiding Zero-Trade Policies in RL with a Decoupled MLOps Architecture
 
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/386>
+* スピーカー：Sho Tanaka
+
+```{figure} images/tsho.jpg
+:width: 400
+
+Sho Tanaka氏
+```
+
 * 円とUSDのやりとりを強化学習で処理する
 * 2025年の1年のデータで前半70%で学習して後半30%で実行する
 * エージェントがトレードしなくなる
 * 長い期間保持する方がよい→たくさんやりとりすると負ける
 
 ### How Static Type Checkers Understand Dynamic Python
+
+* トーク概要：<https://tw.pycon.org/2026/en-us/conference/sponsored/21>
+* スピーカー：Rebecca Chen
 
 * pyreflyのはなし
 * 85%の人がtype hintを使っている
@@ -356,7 +400,7 @@ Beer Geekにて（wat、Toomas、Petertc、Soojin、Cheuk、筆者）
 Kir Chou
 胡敏君, 高天, Max Lai, 陳宜昌
 
-### LT
+### Lightning Talks
 
 * Zarrというデカイデータをstrreamするもの
 * Indonesiaから参加した人。たいわん他に参加しているっぽい
@@ -369,17 +413,38 @@ Kir Chou
 Closingでは抽選会が行われました。
 1日目にライトニングトークをしたHan Lee氏が当選してたんですが、もらったソフトウェアは台湾でしか動かないものだそうです（このあとのPartyで本人から聞きました）。
 
-(Han Leeの写真
+```{figure} images/prize.jpg
+:width: 400
 
-参加者数は296名、72名の海外からの参加者（多い！）、48%が初参加とのことです。
+商品を受け取るHan Lee氏
+```
+
+参加者数は296名、72名の海外からの参加者（多い！）。全体の48%が初参加とのことです。
 国別の参加者数では、韓国からが19名でダントツでした。
-日本からは11名が参加したとのことです。私が出会えていない日本からの参加者が他にもいそうです。
+日本からは11名が参加したようです。私が出会えていない日本からの参加者が他にもいそうです。
 
-(国別参加者数
+```{figure} images/international.jpg
+:width: 400
 
-クロージングでPyNightを紹介する写真で
+国別の参加者数
+```
 
-(PyNightを紹介する写真
+クロージングでPyNightを紹介する写真が表示されました。
+このテーブルに私も座っていたんですが、このときはちょうど写真の左上でYuchenとKenjiに次に行くクラフトビールの店を相談しているところでした。
+
+```{figure} images/closing-pynight.jpg
+:width: 400
+
+PyNightを紹介する写真
+```
+
+こうしてPyCon Taiwan 2026は無事に（カンファレンスは）終了しました。
+
+```{figure} images/pycontaiwan2027.jpg
+:width: 400
+
+See you at PyCon TW 2027!
+```
 
 ### Party
 
