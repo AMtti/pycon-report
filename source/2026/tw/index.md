@@ -218,10 +218,10 @@ PyCon TW 2026で、初めて海外のPyConに登壇しました。採択の知�
 
 その夜のPyNightや、その後の集まりでも、各国から来た参加者と交流しました。英語が完璧でなくても、Pythonが好きという気持ちを共有できる。海外のPyConでの交流はこんなに楽しいのか、と感じました。今回の登壇を通じて、もっと英語を話せるようになり、世界中のPythonコミュニティの人たちと交流したいという思いも強くなりました。
 
-```{figure} images/pycontw2026-day2-night.JPG
+```{figure} images/pycontw2026-day0-speakers-dinner.JPG
 :width: 400
 
-各国の参加者との交流
+各国のPythonistaとの集合写真
 ```
 
 詳しい準備や現地での体験は、ブログにもまとめています。
