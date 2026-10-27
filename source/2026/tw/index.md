@@ -148,7 +148,7 @@ Tian Gao氏とは今回初めて会うことができました。
 * トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/373>
 * スピーカー：Freilla Mae Espinola
 
-このトークではPython Asia Organization（PAO）[^pao]のExecutive DirectorであるFreilla氏から、PyCon APACからPythonAsiaに変わっていったのか、について背景や課題、現状について共有されました。
+このトークではPython Asia Organization（PAO）[^pao]のExecutive DirectorであるFreilla氏から、PyCon APACからPythonAsiaへと移行していった背景や課題、現状について共有されました。
 
 [^pao]: [Python Asia - Strengthening Python Communities Across Asia](https://pythonasia.org/)
 
