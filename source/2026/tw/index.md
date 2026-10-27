@@ -13,9 +13,9 @@ PyCon Korea 2026のイベント概要は以下の通りです。
 |URL|<https://2026.pycon.tw/>|
 |日程| 2026年10月17日（土）、18日（日）|
 |場所| 台北市 |
-|会場| TODO大学名 |
-|参加費| 個人：60,000 KRW（約7,000円）、Tシャツ 15,000 KRW |
-|主催| TODO確認 |
+|会場| 台北医学大学 |
+|参加費| 個人：3,490 TWD（約17,000円）、企業：6,500 TWD（約31,500円） |
+|主催| PyCon Taiwan Organizers |
 
 ```{figure} images/pycontaiwan2026.png
 :width: 400
@@ -90,12 +90,12 @@ Conference ChairのRex氏によるオープニング
 Tian Gao氏
 ```
 
-トークの前半はTain氏がCPythonのコア開発者になるまでの話です。
+トークの前半はTian氏がCPythonのコア開発者になるまでの話です。
 [pdb](https://docs.python.org/ja/3/library/pdb.html)を使用しているときに、`ll`コマンドを実行するとローカルの変数の値が書きかわるというバグに遭遇しました。
 これは`f_locals`という辞書の中身が上書きされるためであり、CPythonに対しての初めてのプルリクエストとして、この問題に対処する修正を2023年2月に作成したとのことです。
 翌月にマージされ、オープンソースへの貢献のきっかけとなったそうです。
 
-その後も継続的にPRを出していると、コア開発者のBrandt Bucher氏が連絡をくれて、レビューやマージを手伝ってくれるようになったそうです（Brandt Bucker氏は構造的パターンマッチの作者として有名です）。
+その後も継続的にPRを出していると、コア開発者のBrandt Bucher氏が連絡をくれて、レビューやマージを手伝ってくれるようになったそうです（Brandt氏は構造的パターンマッチの作者として有名です）。
 
 * [Python 3.10の新機能：構造化パターンマッチング | gihyo.jp](https://gihyo.jp/article/2022/07/monthly-python-2207)
 * [Pythonの構造的パターンマッチングのさらに便利なパターン紹介 | gihyo.jp](https://gihyo.jp/article/2024/01/monthly-python-2401)
