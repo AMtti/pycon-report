@@ -185,22 +185,26 @@ PythonAsiaの開催はローカルのコミュニティがリードし、PAOが�
 * トーク概要：<https://tw.pycon.org/2026/en-us/conference/talk/374>
 * スピーカー：wat
 
+日本から参加したwat氏の発表です。
+初めての海外PyConでの英語発表とのことですが、スライドにさまざまなサンプルコードと実行例が表示されており、とてもわかりやすかったです。
+
 ```{figure} images/wat.jpg
 :width: 400
 
 wat氏
 ```
 
-* wat
-* 5ステップでできるようになるよ
-* sounddeviceを使って録音→Numpy aarryになる
-* soundfileライブラリで保存と読み込み。wavで保存される
-* matplotlibで音の大きさを表示
-* 短い時間を取り出してFFTで変換
-* Hann windowで真ん中を強調している
-* windowsの長さで結果が変わる
-* githubあるよ
-* 試せるWebもあるよ
+自身の口笛の音声を、最終的にPythonでスペクトグラムという画像に変換する方法を5段階で解説するという内容です。
+さまざまなサンプルコードと、実行例が表現
+[sounddevice](https://python-sounddevice.readthedocs.io/)を使用して音声データをNumPy配列に変換、逆にfloatのデータを[soundfile](https://python-soundfile.readthedocs.io/)を用いてwavファイルとして保存し再利用する方法、Matplotlibを使用して音の大きさをグラフ表示する例が示されました。
+
+音声から短い時間を取り出して、SciPyのFFTで[フーリエ変換](https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E5%A4%89%E6%8F%9B)を行い、周波数成分を抽出していました。
+周波数はそのまま音の高さ（周波数の値が大きいと音が高い）となるので、重要な情報です。
+また各データの真ん中の要素を強調するため、[ハン窓](https://ja.wikipedia.org/wiki/%E7%AA%93%E9%96%A2%E6%95%B0#%E3%83%8F%E3%83%B3%E7%AA%93)を使用する例を示していました。
+
+実際に試せるWebあるようです。興味のある方は以下のサイトにアクセスしてみてください。
+
+* [SpectLab](https://spectlab-watlab.com/)
 
 ````{admonition} コラム：ここにコラムタイトル入れて
 watさんの発表体験のコラム
@@ -541,6 +545,8 @@ See you at PyCon TW 2027!
 スプリントのランチ（140台湾ドル）
 ```
 
+### 台湾最後の夜
+
 スプリント終了後は仕事していた台湾メンバーや、観光をしていた韓国メンバーなども合流してみんなで中華料理を食べに行きました。
 北京ダックを筆頭に、いろいろおいしかったです。
 
@@ -550,5 +556,34 @@ See you at PyCon TW 2027!
 円卓で中華料理
 ```
 
+その後はいつものように酒好きメンバーで[23 Public](https://maps.app.goo.gl/t292h8bHsfGoYYSf9)というクラフトビールの店へ。
+パイナップルケーキ以外のおすすめおみやげ[^bootien][^suger][^lotus]を教えてもらったり、[PyCon mini Tokyo](https://pyconjp.connpass.com/event/404336/)があるので来てね！と伝えたりしていました。
 
+```{figure} images/last-beer.jpg
+:width: 400
 
+飲み会大好きアジアメンバー
+```
+
+ここでクイズです。
+カンファレンス前日から、すべての日で飲み会の写真に写っている人が私以外にいます。
+わかりますか？
+
+[^bootien]: [布田食品 PeanuTend](https://maps.app.goo.gl/Dqo8rDSBrR6EDFGM8)
+[^suger]: [SUGAR & SPICE](https://maps.app.goo.gl/ZvQt5TnivL3YeTnQ7)
+[^lotus]: [L'Atelier Lotus](https://maps.app.goo.gl/28tgpbQdS8VxopmPA)
+
+## 終わりに
+
+たくさんの台湾メンバーの友人との再会と、キーノートのTian Gao氏含め、初めましての人との出会いもあるPyCon Taiwanでした。
+刺激的なトーク、友人のwatさんの初英語トークへの挑戦、自分もなんとかライトニングトークができ、充実したイベントでした（クラフトビールを飲んでいるだけじゃないんですよ！！）。
+
+次は12月12日に開催されるPyCon mini Tokyoか、はたまたその前にどこかに行くのか！？乞うご期待。
+
+* [PyCon mini Tokyo with PythonAsia conference - connpass](https://pyconjp.connpass.com/event/404336/)
+
+```{figure} images/taipei101.jpg
+:width: 250
+
+台北101
+```
